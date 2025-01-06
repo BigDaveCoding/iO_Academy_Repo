@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace;
+  letter-spacing: 0.08rem;
+}
+
+:root {
+  --link_primary_color: rgb(0, 100, 0);
+  --link_hover_color: rgb(0, 50, 200);
+}
+
+.header_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header_container div:nth-child(2) {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  border-bottom: 0.5px solid black;
+}
+
+.header_container div:last-child, .header_container div:first-child {
+  display: flex;
+  width: 25%;
+}
+
+.header_container div:last-child {
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a, a {
+  color: var(--link_primary_color);
+  text-decoration: none;
+}
+
+nav ul li a:hover, a:hover {
+  color: var(--link_hover_color);
+}
+
+nav ul li a::before, a::before {
+  content: "-";
+  color: var(--link_primary_color);
+}
+
+nav ul li a::after, a::after {
+  content: "-";
+  color: var(--link_primary_color);
+}
+
+.solar_system {
+  display: flex;
+  padding: 1rem 0;
+  width: 100%;
+  border-bottom: 0.5px solid black;
+}
+
+.solar_system_content {
+  padding: 2rem 2rem;
+  width: 100%;
+}
+
+.solar_system_table {
+  width: 100%;
+  text-align: left;
+}
+
+.solar_system_table th, .solar_system_table td {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding-left: 0.2rem;
+}
+
+.solar_system_table th:last-child, .solar_system_table td:last-child {
+  border-right-style: hidden;
+}
+
+.solar_system_table tr:last-child td {
+  border-bottom-style: hidden;
+}
