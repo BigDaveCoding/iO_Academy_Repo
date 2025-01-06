@@ -6,9 +6,15 @@
   letter-spacing: 0.08rem;
 }
 
+html {
+  background-color: black;
+  color: white;
+}
+
 :root {
-  --link_primary_color: rgb(0, 100, 0);
-  --link_hover_color: rgb(0, 50, 200);
+  --link_primary_color: rgb(0, 200, 0);
+  --link_hover_color: rgb(0, 100, 150);
+  --border_primary_color: rgb(255, 255, 255);
 }
 
 .header_container {
@@ -21,7 +27,7 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  border-bottom: 0.5px solid black;
+  border-bottom: 0.5px solid var(--border_primary_color);
 }
 
 .header_container div:last-child, .header_container div:first-child {
@@ -45,11 +51,13 @@ nav ul li {
 
 nav ul li a, a {
   color: var(--link_primary_color);
+  opacity: 0.6;
   text-decoration: none;
 }
 
 nav ul li a:hover, a:hover {
   color: var(--link_hover_color);
+  opacity: 1;
 }
 
 nav ul li a::before, a::before {
@@ -66,7 +74,7 @@ nav ul li a::after, a::after {
   display: flex;
   padding: 1rem 0;
   width: 100%;
-  border-bottom: 0.5px solid black;
+  border-bottom: 0.5px solid var(--border_primary_color);
 }
 
 .solar_system_content {
@@ -80,8 +88,8 @@ nav ul li a::after, a::after {
 }
 
 .solar_system_table th, .solar_system_table td {
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  border-bottom: 1px solid var(--border_primary_color);
+  border-right: 1px solid var(--border_primary_color);
   padding-left: 0.2rem;
 }
 
@@ -91,4 +99,8 @@ nav ul li a::after, a::after {
 
 .solar_system_table tr:last-child td {
   border-bottom-style: hidden;
+}
+
+.solar_system_table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1)
 }
