@@ -72,14 +72,20 @@ nav ul li a::after, a::after {
 
 .solar_system {
   display: flex;
-  padding: 1rem 0;
-  width: 100%;
-  border-bottom: 0.5px solid var(--border_primary_color);
+  height: 30vh;
+  border-bottom: 1px solid var(--border_primary_color);
+  margin: 2rem;
 }
 
-.solar_system_content {
-  padding: 2rem 2rem;
-  width: 100%;
+.solar_system article:first-of-type {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.solar_system h2:first-of-type {
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .solar_system_table {
@@ -87,7 +93,7 @@ nav ul li a::after, a::after {
   text-align: left;
   border-collapse: collapse;
   border-spacing: 0;
-  margin-right: 7rem;
+  /* margin-right: 7rem; */
 }
 
 .solar_system_table th, .solar_system_table td {
