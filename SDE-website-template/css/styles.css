@@ -112,3 +112,45 @@ nav ul li a::after, a::after {
 .solar_system_table tr:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.1)
 }
+
+footer {
+  /* position: fixed;
+  bottom: 0; */
+  width: 100vw;
+  border-top: 1px solid var(--border_primary_color);
+  margin: 30px 0;
+  padding: 15px 0 0 2rem;
+}
+
+footer h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.5rem;
+}
+
+footer address {
+  font-style: normal;
+  margin-bottom: 15px;
+}
+
+footer div:first-of-type {
+  display: flex;
+}
+
+footer a {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 1px;
+}
+
+footer a:first-of-type {
+  padding-right: 20px;
+  border-right: 1px solid var(--border_primary_color);
+}
+
+footer a:last-of-type {
+  padding-left: 20px;
+}
+
+footer a::before, footer a::after {
+  content: "";
+}
