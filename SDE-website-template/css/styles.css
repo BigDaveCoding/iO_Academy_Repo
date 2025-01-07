@@ -7,6 +7,19 @@
   /* border: 1px solid red; */
 }
 
+.silkscreen-regular {
+  font-family: "Silkscreen", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 html {
   background-color: black;
   color: white;
@@ -61,6 +74,8 @@ header > div {
 header h1 {
   margin: 0;
   text-align: center;
+  font-family: 'Silkscreen', serif;
+  font-weight: 100;
 }
 
 nav ul {
@@ -75,6 +90,7 @@ nav ul li {
 }
 
 nav ul li a, a {
+  font-family: 'Silkscreen', serif;
   color: var(--link_primary_color);
   opacity: 0.6;
   text-decoration: none;
@@ -93,6 +109,11 @@ nav ul li a::before, a::before {
 nav ul li a::after, a::after {
   content: "-";
   color: var(--link_primary_color);
+}
+
+h2 *, h3, h4 {
+  font-family: 'Silkscreen', serif;
+  font-weight: 100;
 }
 
 .solar_system {
@@ -170,6 +191,7 @@ footer div:first-of-type {
 }
 
 footer a {
+  font-family: 'courier new', courier, monospace;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 1px;
