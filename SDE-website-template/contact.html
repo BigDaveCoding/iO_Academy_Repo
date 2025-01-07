@@ -19,7 +19,7 @@
     <script defer src="js/index.js"></script>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="header_container">
             <div>
             </div>
@@ -38,10 +38,23 @@
             </div>
         </div>
         
+    </header> -->
+
+    <header>
+        <div class="container">
+            <div></div>
+            <h1>IO ACADEMY MODULE 1</h1>
+            <nav>
+                <ul>
+                    <li class="nav_link"><a href="index.html">Homepage</a></li>
+                    <li class="nav_link"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div id="contact_form" class="flex_container">
-        <form style="display: flex; flex-direction: column; width: 15%;">
+    <div class="container">
+        <form class="contact_form">
             <label for="first_name">First Name</label>
             <input type="text" id="first_name" placeholder="Big" name="first_name" />
 
@@ -52,11 +65,10 @@
             <input type="email" id="email_address" placeholder="bigdave@email.com" name="email_address" />
 
             <label for="comments">Comments</label>
-            <textarea type="text" id="comments" name="comments" placeholder="We love big dave!" style="height: 250px;"></textarea>
+            <textarea type="text" id="comments" name="comments" placeholder="Something to tell me?"></textarea>
 
             <label for="submit_button"></label>
             <input type="submit" id="submit_button" name="submit_button" value="Submit" />
         </form>
-        
     </div>
 </body>
