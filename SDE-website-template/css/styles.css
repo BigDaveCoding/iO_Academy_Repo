@@ -2,10 +2,16 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family:'Courier New', Courier, monospace;
   letter-spacing: 0.08rem;
   /* border: 1px solid red; */
 }
+
+.fa-brands {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .silkscreen-regular {
   font-family: "Silkscreen", serif;
@@ -23,6 +29,10 @@
 html {
   background-color: black;
   color: white;
+}
+
+body {
+  font-family:'Courier New', Courier, monospace;
 }
 
 :root {
@@ -186,7 +196,7 @@ footer address {
   margin-bottom: 15px;
 }
 
-footer div:first-of-type {
+footer div:last-of-type {
   display: flex;
 }
 
@@ -197,18 +207,31 @@ footer a {
   text-decoration-thickness: 1px;
 }
 
-footer a:first-of-type {
+footer div:last-of-type a:first-of-type {
   padding-right: 20px;
   border-right: 1px solid var(--border_primary_color);
 }
 
-footer a:last-of-type {
+footer div:last-of-type a:last-of-type {
   padding-left: 20px;
   border-left: 1px solid var(--border_primary_color);
 }
 
 footer a::before, footer a::after {
   content: "";
+}
+
+.socials {
+  /* border: 1px solid blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 20rem;
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+
+.socials a {
+  color: white;
 }
 
 .up_arrow {
