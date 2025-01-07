@@ -18,6 +18,13 @@ html {
   --border_primary_color: rgb(255, 255, 255);
 }
 
+.container {
+  /* border: 1px solid blue; */
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .header_container {
   width: 100%;
   display: flex;
@@ -73,7 +80,7 @@ nav ul li a::after, a::after {
 
 .solar_system {
   display: flex;
-  border-bottom: 1px solid var(--border_primary_color);
+  /* border-bottom: 1px solid var(--border_primary_color); */
   margin: 2rem;
   gap: 2rem;
   padding-bottom: 1rem;
@@ -163,4 +170,10 @@ footer a:last-of-type {
 
 footer a::before, footer a::after {
   content: "";
+}
+
+.up_arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
 }
