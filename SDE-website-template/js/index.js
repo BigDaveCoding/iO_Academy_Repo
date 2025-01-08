@@ -27,4 +27,21 @@ function fizzBuzz(n){
     }
 }
 
-fizzBuzz(100);
+// fizzBuzz(100);
+
+let result = 0;
+
+function exerciseOne(n) {
+    if (n === 0 || n === undefined) {
+        return `Invalid Number`;
+    } else if (n < 0) {
+        return `${n} is a negative number`;
+    } else if (n % 2 === 0) {
+        return `${n} is an even number`;
+    } else if (n % 2 !== 0) {
+        return `${n} is an odd number`;
+    }
+}
+
+console.log(exerciseOne(Math.round(Math.random() * 100)));
+console.log(exerciseOne(-100));
