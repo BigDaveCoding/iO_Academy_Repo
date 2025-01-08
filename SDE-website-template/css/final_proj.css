@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* letter-spacing: 0.08rem; */
+  /* border: 1px solid red; */
+}
+
+.fa-brands {
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  
+  .silkscreen-regular {
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  .silkscreen-bold {
+    font-family: "Silkscreen", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --button_background_color: #037bff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #343a40;
+    color: white;
+}
+
+nav {
+    padding-top: 2px;
+}
+
+nav span {
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #495057;
+}
+
+.header_search {
+    text-align: right;
+}
+
+.header_search input:last-of-type {
+    background: 0;
+    border: 1px solid green;
+    border-radius: 5px;
+    color: green;
+    padding: 2px 5px;
+    outline: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: #e8ecef;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.a_button {
+    background: var(--button_background_color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.footer {
+    padding: 10px 0;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
