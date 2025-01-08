@@ -31,8 +31,8 @@ function fizzBuzz(n){
 
 let result = 0;
 
-function exerciseOne(n) {
-    if (n === 0 || n === undefined) {
+function exerciseOne(n = 0) {
+    if (n === 0) {
         return `Invalid Number`;
     } else if (n < 0) {
         return `${n} is a negative number`;
@@ -43,5 +43,5 @@ function exerciseOne(n) {
     }
 }
 
-console.log(exerciseOne(Math.round(Math.random() * 100)));
-console.log(exerciseOne(-100));
+console.log(exerciseOne(Math.round(Math.random() * 1000)));
+console.log(exerciseOne(0));
