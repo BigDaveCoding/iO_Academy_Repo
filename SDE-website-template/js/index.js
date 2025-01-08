@@ -32,15 +32,17 @@ function fizzBuzz(n){
 let result = 0;
 
 function exerciseOne(n = 0) {
+    let res
     if (n === 0) {
-        return `Invalid Number`;
+        res = 'Invalid Number';
     } else if (n < 0) {
-        return `${n} is a negative number`;
+        res = `${n} is a negative number`;
     } else if (n % 2 === 0) {
-        return `${n} is an even number`;
+        res = `${n} is an even number`;
     } else if (n % 2 !== 0) {
-        return `${n} is an odd number`;
+        res = `${n} is an odd number`;
     }
+    return res;
 }
 
 console.log(exerciseOne(Math.round(Math.random() * 1000)));
