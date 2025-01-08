@@ -10,7 +10,7 @@ function HeadsOrTails() {
     return h_or_t;
 }
 
-console.log(HeadsOrTails());
+// console.log(HeadsOrTails());
 
 function fizzBuzz(n){
     for (i = 1; i <= n; i++) {
@@ -50,8 +50,45 @@ function exerciseOne(n = 0) {
 
 
 function rockPaperScissors(){
+    let result
     let x = Math.floor(Math.random() * 3);
-    print(x);
+    const choices = ['rock', 'paper', 'scissors'];
+    let cpu_choice = choices[x];
+
+    let player_choice
+
+    while (true) {
+        player_choice = prompt('rock, paper or scissors: ');
+        if (choices.includes(player_choice)) {
+            console.log(`player choice is: ${player_choice}`);
+            break;
+        } else {
+            console.log('Invalid choice');
+        }
+    }
+
+    console.log(`computer chooses: ${cpu_choice}`);
+
+    if (player_choice.toLowerCase() == cpu_choice.toLowerCase()) {
+        result = 'It\'s a tie';
+    } else if (player_choice.toLowerCase() === 'rock' && cpu_choice.toLowerCase() === 'scissors') {
+        result = 'Player wins';
+    } else if (player_choice.toLowerCase() === 'scissors' && cpu_choice.toLowerCase() === 'paper') {
+        result = 'Player wins';
+    } else if (player_choice.toLowerCase() === 'paper' && cpu_choice.toLowerCase() === 'rock') {
+        result = 'Player wins';
+    } else {
+        result = 'Computer wins';
+    }
+
+    return result;
+
 }
 
-console.log(rockPaperScissors());
+function playGame(rounds, game_function) {
+    for (i = 0; i < rounds; i++) {
+        console.log(game_function())
+    }
+}
+
+playGame(3, rockPaperScissors);
