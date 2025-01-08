@@ -45,5 +45,13 @@ function exerciseOne(n = 0) {
     return res;
 }
 
-console.log(exerciseOne(Math.round(Math.random() * 1000)));
-console.log(exerciseOne(0));
+// console.log(exerciseOne(Math.round(Math.random() * 1000)));
+// console.log(exerciseOne(0));
+
+
+function rockPaperScissors(){
+    let x = Math.floor(Math.random() * 3);
+    print(x);
+}
+
+console.log(rockPaperScissors());
