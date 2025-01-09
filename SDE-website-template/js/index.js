@@ -102,28 +102,28 @@ planet_buttons.forEach(button => {
 let planet_content_open = false;
 let planet_current_content_id = '';
 
+
 function showPlanetInfo(button_id) {
     console.log(`${button_id} was clicked`);
-    let content = document.querySelector('.planet_content');
-
+    let planet_content = document.querySelector('.planet_content');
     if (planet_content_open && planet_current_content_id === button_id) {
         
         planet_content_open = false;
         planet_current_content_id = '';
 
-        content.classList.remove('planet_content_visible');
-        content.classList.add('planet_content_hidden');
+        planet_content.classList.remove('planet_content_visible');
+        planet_content.classList.add('planet_content_hidden');
         
     } else {
         
         planet_content_open = true;
         planet_current_content_id = button_id;
         
-        content.classList.remove('planet_content_hidden');
-        content.classList.add('planet_content_visible');
+        planet_content.classList.remove('planet_content_hidden');
+        planet_content.classList.add('planet_content_visible');
         
         if (button_id === 'dwarf_planets') {
-            content.innerHTML = '<h2>Dwarf Planets</h2>\
+            planet_content.innerHTML = '<h2>Dwarf Planets</h2>\
                 <p>A dwarf planet is a planetary-mass object that is neither a planet nor a natural satellite.\
                 That is, it is not a moon, but it is not a planet either.</p>\
                 <p>There are five officially recognised dwarf planets in our solar system:</p>\
@@ -136,7 +136,7 @@ function showPlanetInfo(button_id) {
                 </ul>';
 
         }  else if (button_id === 'inner_planets') {
-            content.innerHTML = '<h2>Inner Planets</h2>\
+            planet_content.innerHTML = '<h2>Inner Planets</h2>\
                 <p>The four terrestrial or inner planets have dense, rocky compositions, few or no moons, and no ring systems.\
                 They are composed largely of refractory minerals such as silicates—which form their crusts and mantles—and metals such as iron and nickel which form their cores.</p>\
                 <p>There are four inner planets in our solar system:</p>\
@@ -147,7 +147,7 @@ function showPlanetInfo(button_id) {
                 <li>Mars</li>\
                 </ul>';
         }  else if (button_id === 'outer_planets') {
-            content.innerHTML = '<h2>Outer Planets</h2>\
+            planet_content.innerHTML = '<h2>Outer Planets</h2>\
                 <p>The outer planets, also known as gas giants, are composed mainly of hydrogen and helium and have multiple moons and ring systems.</p>\
                 <p>There are four outer planets in our solar system:</p>\
                 <ul>\
