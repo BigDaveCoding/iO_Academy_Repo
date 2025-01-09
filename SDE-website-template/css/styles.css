@@ -177,6 +177,21 @@ h2 *, h3, h4 {
   background-color: rgba(255, 255, 255, 0.1)
 }
 
+.solar_system_button {
+  border: 1px solid var(--link_primary_color);
+  border-radius: 5px;
+  background: 0;
+  color: var(--link_primary_color);
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 1rem;
+}
+
+.solar_system_button:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.08)
+}
+
 .dwarf_planets {
   margin: 2rem;
 }
