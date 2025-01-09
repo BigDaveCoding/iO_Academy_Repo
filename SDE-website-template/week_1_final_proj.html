@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
 
-    <script defer src="js/index.js"></script>
+    <script defer src="js/final_proj.js"></script>
 </head>
 <body>
 
@@ -74,6 +74,37 @@
             </div>
         </div>"
     </section>
+
+    <section id="contact_form_section">
+        <div class="contact_form_container">
+            <i id="contact_form_close_button" class="fa-solid fa-rectangle-xmark"></i>
+            <h4><strong>Get in touch</strong></h4>
+            <p>Fill out the form below and we will get in touch</p>
+            <p class="required_text"><sup>*</sup> required</p>
+            <form class="form-grid">
+                <label for="name">Name<sup class="required_text">*</sup></label>
+                <input type="text" name="name" id="" />
+                <p class="form_checks">Minimum of 5 characters</p>
+
+                <label for="email_address">Email<sup class="required_text">*</sup></label>
+                <input type="email" name="email_address" id="email_address">
+                <p class="form_checks">Maximum of 255 characters</p>
+
+                <label for="comments">Reason for contacting us</label>
+                <textarea name="comments" id="comments"></textarea>
+                <p class="form_checks">Minimum of 50 characters, maximum of 500 characters</p>
+                
+                <div>
+                    <input type="checkbox" name="check_tandc" id="check_tandc">
+                    <label for="check_tandc">Please Accept our Terms & Conditions<sup class="required_text">*</sup></label>
+                    <p class="form_checks">This checkbox must be ticked</p>
+                </div>
+                <input class="form_submit" type="submit" value="Send">
+            </form>
+            
+        </div>
+    </section>
+
     <footer class="container">
         <div class="footer">
             <p>&copy; Copyright 2025</p>
