@@ -177,6 +177,19 @@ h2 *, h3, h4 {
   background-color: rgba(255, 255, 255, 0.1)
 }
 
+.dwarf_planets {
+  margin: 2rem;
+}
+
+.planet_content {
+  display: none;
+}
+
+.planet_content h2 {
+  font-family: 'Silkscreen', serif;
+  font-weight: 100;
+}
+
 footer {
   /* position: fixed;
   bottom: 0; */
