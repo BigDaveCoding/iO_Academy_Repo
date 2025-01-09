@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
 
-    <script defer src="js/index.js"></script>
+    <script defer src="js/contact.js"></script>
 </head>
 <body>
     <!-- <header>
@@ -59,17 +59,20 @@
 
     <div class="container">
         <form class="contact_form">
-            <label for="first_name">First Name</label>
+            <label for="first_name">First Name<span class="incomplete_contact_form hidden"><sup>*</sup></span></label>
             <input type="text" id="first_name" placeholder="Big" name="first_name" />
 
-            <label for="last_name">Last Name</label>
+            <label for="last_name">Last Name<span class="incomplete_contact_form hidden"><sup>*</sup></span></label>
             <input type="text" id="last_name" placeholder="Dave" name="last_name" />
 
-            <label for="email_address">Email Address</label>
+            <label for="email_address">Email Address<span class="incomplete_contact_form hidden"><sup>*</sup></span></label>
             <input type="email" id="email_address" placeholder="bigdave@email.com" name="email_address" />
 
-            <label for="comments">Comments</label>
+            <label for="comments">Comments<span class="incomplete_contact_form hidden"><sup>*</sup></span></label>
             <textarea type="text" id="comments" name="comments" placeholder="Something to tell me?"></textarea>
+
+            <span class = "incomplete_contact_form hidden"></span>
+            <p class="incomplete_contact_form hidden">Please complete all fields before submitting</p>
 
             <label for="submit_button"></label>
             <input type="submit" id="submit_button" name="submit_button" value="Submit" />
