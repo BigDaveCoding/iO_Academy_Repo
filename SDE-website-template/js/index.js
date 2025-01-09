@@ -107,15 +107,21 @@ function showPlanetInfo(button_id) {
     let content = document.querySelector('.planet_content');
 
     if (planet_content_open && planet_current_content_id === button_id) {
-        content.style.display = 'none';
+        
         planet_content_open = false;
         planet_current_content_id = '';
+
+        content.classList.remove('planet_content_visible');
+        content.classList.add('planet_content_hidden');
+        
     } else {
-        content.style.display = 'block';
+        
         planet_content_open = true;
         planet_current_content_id = button_id;
-    
-
+        
+        content.classList.remove('planet_content_hidden');
+        content.classList.add('planet_content_visible');
+        
         if (button_id === 'dwarf_planets') {
             content.innerHTML = '<h2>Dwarf Planets</h2>\
                 <p>A dwarf planet is a planetary-mass object that is neither a planet nor a natural satellite.\
@@ -130,7 +136,6 @@ function showPlanetInfo(button_id) {
                 </ul>';
 
         }  else if (button_id === 'inner_planets') {
-            content.style.display = 'block';
             content.innerHTML = '<h2>Inner Planets</h2>\
                 <p>The four terrestrial or inner planets have dense, rocky compositions, few or no moons, and no ring systems.\
                 They are composed largely of refractory minerals such as silicates—which form their crusts and mantles—and metals such as iron and nickel which form their cores.</p>\
