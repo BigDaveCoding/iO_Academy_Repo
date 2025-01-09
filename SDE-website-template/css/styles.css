@@ -294,3 +294,11 @@ footer a::before, footer a::after {
 .contact_form textarea {
   height: 10rem;
 }
+
+.hidden {
+  display: none;
+}
+
+.incomplete_contact_form {
+  color: red;
+}
