@@ -190,6 +190,14 @@ h2 *, h3, h4 {
   font-weight: 100;
 }
 
+.planet_content_hidden {
+  display: none;
+}
+
+.planet_content_visible {
+  display: block;
+}
+
 footer {
   /* position: fixed;
   bottom: 0; */
