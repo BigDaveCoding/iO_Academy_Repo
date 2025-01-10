@@ -179,9 +179,14 @@ nav a:hover {
     cursor: pointer;    
 }
 
-#contact_form_close_button {
-    text-align: right;
+.close_button_div {
+    display:flex;
+    justify-content: flex-end;
+    padding: 0;
     margin: 0 0 -30px 0;
+}
+
+#contact_form_close_button {
     cursor: pointer;
 }
 
@@ -189,6 +194,11 @@ nav a:hover {
     color: red;
 }
 
-.button:disabled {
+#submit:disabled {
     background-color: grey;
+    cursor: default;
+}
+
+.hidden {
+    display: none;
 }
