@@ -1,4 +1,5 @@
 
+const contact_section = document.querySelector('#contact_form_section');
 const name_form = document.querySelector('#name');
 const email_form = document.querySelector('#email_address');
 const comments_form = document.querySelector('#comments');
@@ -116,5 +117,24 @@ function updateSubmitForm() {
 form_array.forEach(item => {
     item.addEventListener('input', checkRequirements);
 });
+
+const contact_close_button = document.querySelector('#contact_form_close_button')
+console.log(contact_close_button);
+console.log(contact_section);
+
+contact_close_button.addEventListener('click', () => {
+    contact_section.classList.add('hidden');
+});
+
+const page_buttons_contact_form = document.querySelectorAll('.a_button');
+console.log(page_buttons_contact_form);
+
+page_buttons_contact_form.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        contact_section.classList.remove('hidden');
+    });
+});
+
 
 
