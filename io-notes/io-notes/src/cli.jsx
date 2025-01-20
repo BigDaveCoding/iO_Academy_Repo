@@ -53,7 +53,7 @@ import './cli.css';
 function CLI_Notes() {
     return (
         <>
-            <div className="container">
+            <div className="container command_line_interface">
 
                 <div className = "cli_note_title">
                     <h4>Command Line Interface</h4>

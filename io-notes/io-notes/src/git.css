@@ -1,0 +1,38 @@
+
+
+.git_page_title {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.git_intro_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.git_term_item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-bottom: 1px solid black;
+    
+}
+
+.git_term {
+    align-content: center;
+}
+
+.git_term_desc {
+    border-left: 1px solid black;
+    padding: 1rem;
+}
+
+.git_repo_section ul {
+    list-style-type:circle;
+    padding: 0;
+}
+
+.git_section_title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
