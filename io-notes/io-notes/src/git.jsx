@@ -67,6 +67,21 @@
 // 3. git push - send the changes from the local repo to the remote repo
 // 4. git status - check the status of the repo
 
+
+// What should go into a commit
+// A commit should be a thing
+// Something that works
+// An actual step in your work
+// a single change
+// what might be useful to be able to undo in the future??
+// The commit message should actually describe what you did. Shouldnt go into to much detail, but should be clear
+
+
+// general rule: better to commit toooften/too small than too little/too big
+
+
+
+
 import './git.css'
 
 function Git() {
