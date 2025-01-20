@@ -30,10 +30,9 @@
 // A repo is a timline of commits - each commit being work saved into the repo
 // A repo is a history of changes to the codebase
 
-
-
 // git config user.name "your name" - set your name
 // git config user.email "your email" - set your email
+
 
 
 import './git.css'
