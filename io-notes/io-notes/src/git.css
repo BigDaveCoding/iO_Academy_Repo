@@ -36,3 +36,17 @@
     font-size: 1.5rem;
     margin: 0.5rem 0;
 }
+
+.repo_grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.repo_grid_list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    list-style:decimal-leading-zero;
+    font-size: 0.8rem;
+}

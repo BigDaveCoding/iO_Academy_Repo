@@ -33,7 +33,39 @@
 // git config user.name "your name" - set your name
 // git config user.email "your email" - set your email
 
+// creating a new repo
+// 1. Click the plus button on GitHub (top right)
+// 2. Select yourself as the owner and enter a repo name
+// 3. Choose public or private
+// 4. Click add Readme file
+// 5. Click create repository
 
+
+// cloning a repo
+// Act of downloading a local copy of the repon so ytou can work on iy
+// local: on your computer
+// 1. Click the green code button on the repo
+// 2. Make sure the SSH us selected from options
+// 3. Copy the clone link from the tect box
+// 4. open a terminal and navigate to somehwere sensible
+// 5. run git clone paste-url-here
+// 6. cd into the new repo
+
+
+// Using Git to save work
+// There are 4 commands we need to know to start using git
+// They are used in a particular order.
+// working directory - your code in vs code, editing files like normal
+// staging area - files that are ready to be saved
+// local repo - your repos timeline of change, on your mac
+// remote - repos timline of changes uploaded to github
+
+
+// The Process
+// 1. git add . - move all changes from the working directory to the staging area
+// 2. git commit -m "message" - save the changes in the staging area to the local repo
+// 3. git push - send the changes from the local repo to the remote repo
+// 4. git status - check the status of the repo
 
 import './git.css'
 
@@ -73,7 +105,7 @@ function Git() {
                     </div>
                 </div>
 
-                <hr className = "section_break"/>
+                < hr className = "section_break" />
 
                 <div className="git_repo_section">
                     <h5 className="git_section_title silkscreen_title">What is a repository?</h5>
@@ -83,6 +115,52 @@ function Git() {
                         <li>A repo is a history of changes to the codebase</li>
                     </ul>
                 </div>
+
+                <hr className = "section_break"/>
+
+                <div className="repo_process">
+                    <h5 className="git_section_title silkscreen_title">The Repo Process</h5>
+
+                    <div className = "repo_grid">
+                        <div className='creating_repo'>
+                            <h5 className="repo_grid_title">Creating a new repo</h5>
+                            <ul className="repo_grid_list">
+                                <li>Click the plus button on GitHub (top right)</li>
+                                <li>Select yourself as the owner and enter a repo name</li>
+                                <li>Choose public or private</li>
+                                <li>Click add Readme file</li>
+                                <li>Click create repository</li>
+                            </ul>
+
+                        </div>
+                        <div className='cloning_repo'>
+                            <h5 className="repo_grid_title">Cloning a repo</h5>
+                            <ul className="repo_grid_list">
+                                <li>Click the green code button on the repo</li>
+                                <li>Make sure the SSH us selected from options</li>
+                                <li>Copy the clone link from the tect box</li>
+                                <li>open a terminal and navigate to somehwere sensible</li>
+                                <li>run git clone paste-url-here</li>
+                                <li>cd into the new repo</li>
+                            </ul>
+
+                        </div>
+                        <div className='saving_work'>
+                            <h5 className="repo_grid_title">Using Git to save work</h5>
+                            <ul className="repo_grid_list">
+                                <li>git add . - move all changes from the working directory to the staging area</li>
+                                <li>git commit -m "message" - save the changes in the staging area to the local repo</li>
+                                <li>git push - send the changes from the local repo to the remote repo</li>
+                                <li>git status - check the status of the repo</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
             </div>
 
 
