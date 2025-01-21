@@ -11,5 +11,33 @@
         "Best practice: make them staright away!",
         "Adding something that has already been commited to .gitignore will not work, it's a pain",
         "The file will not be visible in your terminal - use ls -a to see it"
+    ],
+
+    "flexbox" : [ 
+        "The full name is flexible box layout, but everyone calls it flexbox or flex",
+        "It is a method for aranging content in rows or columns",
+        "The key thing is its flexibility to layout contet",
+        "It is similar in many ways to grid - often tmes you can use grid/flex to achieve the same results"
+    ],
+
+    "when-to-use-grid" : [
+        "Use Grid when you need a layout that has a very specific size and shape. Need control over two dimensions - Columns AND Rows",
+        "Use Grid when you have a fixed number of items to display",
+        "Use Grid when you need to align items across multiple rows and columns",
+        "Use Grid when you need to create a complex layout"
+
+    ],
+
+    "when-to-use-flexbox" : [
+        "Use Flexbox when you need control over one dimension - either a Column OR Row and your content is dynamic",
+        "Use Flexbox when you have a variable number of items to display",
+        "Use Flexbox when you need to align items across a single row or column",
+        "Use Flexbox when you need to distribute space between items or around items"
+    ],
+
+    "flexbox-concepts" : [
+        "Conatiner - the parent element that holds the items you want to lay out",
+        "Items - the children of the container that you want to lay out",
+        "Just like with grid, we apply css to the parent in order to control the layout of the children"
     ]
 }
