@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      {/* <CLI_Notes /> */}
+      <CLI_Notes />
       <Git />
     </>
   )

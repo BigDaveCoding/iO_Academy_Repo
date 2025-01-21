@@ -1,0 +1,15 @@
+
+
+{
+    ".gitignore" : [
+        "git ignore file. It has to be called '.gitignore' and it should be in the root of the project.",
+        "It is used to tell git which files to ignore. It is a text file with a list of files and directories to ignore.",
+        "Sometimes there are fles in a project we do not want to end up on GitHub.",
+        "For example, mac generates a file called '.DS_store' in every folder. We do not want to push this file to GitHub.",
+        "Once we create a '.gitignore' file, we can add the files and directories we want to ignore.",
+        "Once created, you need to add/comit/push the '.gitignore' file to the repository.",
+        "Best practice: make them staright away!",
+        "Adding something that has already been commited to .gitignore will not work, it's a pain",
+        "The file will not be visible in your terminal - use ls -a to see it"
+    ]
+}
